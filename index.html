@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AADITYA AEROSPACE</title>
+<meta name="description" content="Aerospace Engineering · Operating Systems · Computational Fluid Dynamics">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;350;400;500&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" href="css/base.css?v=3">
+<link rel="stylesheet" href="css/layout.css?v=8">
+<link rel="stylesheet" href="css/components.css?v=9">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav" role="navigation">
+  <div class="nav__inner">
+    <a href="#hero" class="nav__logo" data-nav="hero">AADITYA AEROSPACE</a>
+    <button class="nav__toggle" aria-label="Toggle menu">&#9776;</button>
+    <div class="nav__links" id="navLinks">
+      <a href="#hero" class="nav__link active" data-nav="hero">Home</a>
+      <a href="#projects" class="nav__link" data-nav="projects">Projects</a>
+      <a href="#research" class="nav__link" data-nav="research">Research</a>
+    <a href="#blog" class="nav__link" data-nav="blog">Blog</a>
+    <a href="#yt" class="nav__link" data-nav="yt">YouTube</a>
+    <a href="#about" class="nav__link" data-nav="about">About</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section id="hero" class="section active">
+  <div class="hero__bg" id="heroBg"></div>
+  <div class="hero__content">
+    <h1 class="hero__title">AADITYA<span class="accent">.</span>AEROSPACE</h1>
+    <ul class="hero__disciplines">
+      <li data-prefix="├─">Aerospace Engineering</li>
+      <li data-prefix="├─">Operating Systems</li>
+      <li data-prefix="└─">Computational Fluid Dynamics</li>
+    </ul>
+    <div class="hero__tagline">"This site looks like engineering documentation. That's intentional."</div>
+    <div class="hero__stats">
+      <span class="hero__stat">4 Engineering Projects</span>
+      <span class="hero__stat">3 Published Books</span>
+      <span class="hero__stat">190,000+ Lines of Code</span>
+      <span class="hero__stat">GPU-Native CFD</span>
+      <span class="hero__stat">x86_64 RTOS</span>
+    </div>
+  </div>
+  <div class="hero__annotations" id="heroAnnotations">
+    <span class="hero__annotation">ΔV</span>
+    <span class="hero__annotation">I<sub>sp</sub></span>
+    <span class="hero__annotation">Mach</span>
+    <span class="hero__annotation">Re</span>
+    <span class="hero__annotation">APIC</span>
+    <span class="hero__annotation">ACPI</span>
+  </div>
+  <div class="scroll-indicator">
+    <span class="scroll-indicator__label">Scroll</span>
+    <div class="scroll-indicator__line"></div>
+    <span class="scroll-indicator__chevron">▼</span>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="section">
+  <div class="section__inner">
+    <h2 class="section__title">Projects</h2>
+    <div class="project-grid">
+
+      <!-- FeatherRTOS -->
+      <article class="project-card" data-project="featherrtos">
+        <div class="project-card__header">
+          <div class="project-card__title">FeatherRTOS</div>
+          <span class="project-card__number">PRJ-001</span>
+        </div>
+        <div class="project-card__subtitle">x86_64 Real-Time Operating System</div>
+        <div class="project-card__divider"></div>
+        <div class="project-card__tags">
+          <span class="project-card__tag">Rust</span>
+          <span class="project-card__tag">UEFI</span>
+          <span class="project-card__tag">APIC</span>
+          <span class="project-card__tag">SMP</span>
+          <span class="project-card__tag">PCIe</span>
+          <span class="project-card__tag">ACPI</span>
+          <span class="project-card__tag">AHCI</span>
+          <span class="project-card__tag">NVMe</span>
+          <span class="project-card__tag">ARINC 653</span>
+          <span class="project-card__tag">FDIR</span>
+        </div>
+        <div class="project-card__preview">
+          Monolithic kernel · ~20,450 lines · Cooperative FPPS + EDF · Space-grade partitioning
+        </div>
+      </article>
+
+      <!-- FeatherCFD -->
+      <article class="project-card" data-project="cfd">
+        <div class="project-card__header">
+          <div class="project-card__title">FeatherCFD</div>
+          <span class="project-card__number">PRJ-002</span>
+        </div>
+        <div class="project-card__subtitle">GPU-Native CFD Framework</div>
+        <div class="project-card__divider"></div>
+        <div class="project-card__tags">
+          <span class="project-card__tag">Vulkan</span>
+          <span class="project-card__tag">OpenGL</span>
+          <span class="project-card__tag">N-S Solver</span>
+          <span class="project-card__tag">WENO-5</span>
+          <span class="project-card__tag">Multigrid</span>
+          <span class="project-card__tag">NACA</span>
+          <span class="project-card__tag">192³ Grid</span>
+        </div>
+        <div class="project-card__preview">
+          Incompressible/compressible solvers · GPU multigrid pressure projection · Volumetric raymarching
+        </div>
+      </article>
+
+      <!-- FeatherOrbital -->
+      <article class="project-card" data-project="orbital">
+        <div class="project-card__header">
+          <div class="project-card__title">FeatherOrbital</div>
+          <span class="project-card__number">PRJ-003</span>
+        </div>
+        <div class="project-card__subtitle">Orbital Mechanics Toolkit</div>
+        <div class="project-card__divider"></div>
+        <div class="project-card__tags">
+          <span class="project-card__tag">Kepler</span>
+          <span class="project-card__tag">Hohmann</span>
+          <span class="project-card__tag">LVLH/ECI</span>
+          <span class="project-card__tag">ΔV</span>
+          <span class="project-card__tag">CubeSat</span>
+          <span class="project-card__tag">Propagation</span>
+          <span class="project-card__tag featuring">Published Soon</span>
+        </div>
+        <div class="project-card__preview">
+          Keplerian propagation · Hohmann transfers · LVLH ↔ ECI transforms · Mission planning tools
+        </div>
+      </article>
+
+      <!-- FeatherArch -->
+      <article class="project-card" data-project="featherarch">
+        <div class="project-card__header">
+          <div class="project-card__title">FeatherArch</div>
+          <span class="project-card__number">PRJ-004</span>
+        </div>
+        <div class="project-card__subtitle">Power-Optimized Linux Distribution</div>
+        <div class="project-card__divider"></div>
+        <div class="project-card__tags">
+          <span class="project-card__tag">7-9W Idle</span>
+          <span class="project-card__tag">400MHz Min</span>
+          <span class="project-card__tag">40Hz Display</span>
+          <span class="project-card__tag">Scheduler Tuning</span>
+          <span class="project-card__tag">Battery Life</span>
+        </div>
+        <div class="project-card__preview">
+          CPU freq capping · Turbo boost control · Power management · Scheduler optimization
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- FeatherRTOS Detail -->
+<section id="featherrtos" class="section">
+  <div class="project-bg"><canvas id="bgRtos"></canvas></div>
+  <div class="section__inner">
+    <a href="#projects" class="project-back">&#8592; Back to Projects</a>
+
+    <div class="project-header">
+      <div class="project-header__title">FeatherRTOS</div>
+      <div class="project-header__subtitle">x86_64 Real-Time Operating System</div>
+    <div class="project-header__meta">
+      <span>Rust</span>
+      <span>~20,450 lines</span>
+      <span>765 files</span>
+      <span>Monolithic Kernel</span>
+      <span>UEFI Boot</span>
+    </div>
+
+    <div style="display:flex;flex-wrap:wrap;gap:12px;margin:20px 0 32px;font-family:var(--font-mono);font-size:0.6875rem;">
+      <span style="padding:6px 14px;border:1px solid var(--accent-dim);color:var(--accent);border-radius:var(--radius);background:rgba(74,124,191,0.05);">190,000+ Lines of Code</span>
+      <span style="padding:6px 14px;border:1px solid var(--accent-dim);color:var(--accent);border-radius:var(--radius);background:rgba(74,124,191,0.05);">765 Files</span>
+      <span style="padding:6px 14px;border:1px solid var(--accent-dim);color:var(--accent);border-radius:var(--radius);background:rgba(74,124,191,0.05);">x86_64 Long Mode</span>
+      <span style="padding:6px 14px;border:1px solid var(--accent-dim);color:var(--accent);border-radius:var(--radius);background:rgba(74,124,191,0.05);">SMP</span>
+      <span style="padding:6px 14px;border:1px solid var(--accent-dim);color:var(--accent);border-radius:var(--radius);background:rgba(74,124,191,0.05);">APIC + PCIe</span>
+      <span style="padding:6px 14px;border:1px solid var(--accent-dim);color:var(--accent);border-radius:var(--radius);background:rgba(74,124,191,0.05);">AHCI + NVMe</span>
+      <span style="padding:6px 14px;border:1px solid var(--accent-dim);color:var(--accent);border-radius:var(--radius);background:rgba(74,124,191,0.05);">ARINC 653</span>
+      <span style="padding:6px 14px;border:1px solid var(--accent-dim);color:var(--accent);border-radius:var(--radius);background:rgba(74,124,191,0.05);">FDIR</span>
+      <span style="padding:6px 14px;border:1px solid var(--accent-dim);color:var(--accent);border-radius:var(--radius);background:rgba(74,124,191,0.05);">Networking Stack</span>
+    </div>
+    </div>
+
+    <h3 style="font-family:var(--font-mono);font-size:0.875rem;color:var(--text);margin-bottom:16px;letter-spacing:0.05em;text-transform:uppercase;">Kernel Architecture</h3>
+
+    <div class="kernel-diagram" id="kernelDiagram">
+      <div class="kernel-node" data-module="uefi">
+        <div class="kernel-node__title">UEFI (OVMF)</div>
+        <div class="kernel-node__desc">Firmware loads BOOTX64.EFI</div>
+      </div>
+      <div class="kernel-arrow">&#9660;</div>
+      <div class="kernel-node" data-module="stub">
+        <div class="kernel-node__title">NASM Stub</div>
+        <div class="kernel-node__desc">Long mode GDT · Page tables · 64-bit entry</div>
+      </div>
+      <div class="kernel-arrow">&#9660;</div>
+      <div class="kernel-node" data-module="rustmain">
+        <div class="kernel-node__title">rust_main()</div>
+        <div class="kernel-node__desc">C entry point — 16-step init</div>
+      </div>
+    </div>
+
+    <div class="kernel-detail" id="kernelDetail">
+      <div class="kernel-detail__title" id="kernelDetailTitle">Select a module</div>
+      <div id="kernelDetailBody">Click any node above to view details about that subsystem.</div>
+    </div>
+
+    <h3 style="font-family:var(--font-mono);font-size:0.875rem;color:var(--text);margin:32px 0 16px;letter-spacing:0.05em;text-transform:uppercase;">Architecture Overview</h3>
+
+    <div style="font-family:var(--font-mono);font-size:0.8125rem;color:var(--text-dim);line-height:2.2;">
+      <div>├─ Architecture: x86_64 (UEFI boot, long mode)</div>
+      <div>├─ Language: Rust (no_std, no_alloc)</div>
+      <div>├─ Total: ~20,450 lines of kernel code</div>
+      <div>├─ Monolithic kernel — all drivers + services in single ELF + PE32+ binary</div>
+      <div>├─ Display: VirtIO-GPU 1920x1080 + Intel iGPU fallback</div>
+      <div>├─ Scheduler: Cooperative FPPS + EDF hybrid</div>
+      <div>├─ IPC: Semaphores, mutexes, message queues, event flags</div>
+      <div>├─ Storage: AHCI SATA (Q35) + NVMe + FAT32</div>
+      <div>├─ Networking: Intel E1000e, ARP/IPv4/ICMP/UDP/DNS</div>
+      <div>└─ Target: QEMU q35 (TCG/KVM) + Dell N5110 real hardware</div>
+    </div>
+
+    <h3 style="font-family:var(--font-mono);font-size:0.875rem;color:var(--text);margin:32px 0 16px;letter-spacing:0.05em;text-transform:uppercase;">Source Tree</h3>
+
+    <div style="font-family:var(--font-mono);font-size:0.75rem;color:var(--text-dim);line-height:2;">
+      <div>├─ arch/        8,470 lines  (41%) — GDT, IDT, APIC, PCIe, ACPI, HPET, AHCI, VirtIO, NVMe, xHCI, I2C, USB</div>
+      <div>├─ gui/         1,802 lines  ( 9%) — Window manager, 2D renderer, terminal, app launcher</div>
+      <div>├─ sched/       1,293 lines  ( 6%) — FPPS + EDF scheduler, syscalls, IPC, timers, ARINC 653 partitions</div>
+      <div>├─ net/         1,032 lines  ( 5%) — E1000e NIC, ARP, IPv4, ICMP, UDP, DNS</div>
+      <div>├─ fs/            875 lines  ( 4%) — FAT32, block device, vnode abstraction</div>
+      <div>├─ memory/        791 lines  ( 4%) — Frame bitmap allocator, 4-level paging, buddy heap</div>
+      <div>├─ hal/           148 lines  ( 1%) — Serial, timer, GPIO, framebuffer HAL</div>
+      <div>├─ main.rs      1,294 lines  ( 6%) — Entry point, boot init, task_wm</div>
+      <div>├─ asm files      991 lines  ( 5%) — UEFI stub, interrupt wrappers, boot assembly</div>
+      <div>└─ other          156 lines  ( 1%) — ELF loader, macros</div>
+    </div>
+
+    <h3 style="font-family:var(--font-mono);font-size:0.875rem;color:var(--text);margin:32px 0 16px;letter-spacing:0.05em;text-transform:uppercase;">Boot Flow</h3>
+
+    <table class="spec-table">
+      <tr><td>1</td><td>GDT init + TSS (long mode segments)</td></tr>
+      <tr><td>2</td><td>IDT init (48 interrupt handlers — exceptions, IRQs, syscall)</td></tr>
+      <tr><td>3</td><td>Serial init (COM1, 115200 baud, debug output)</td></tr>
+      <tr><td>4</td><td>ACPI init (RSDP, MCFG, HPET, MADT)</td></tr>
+      <tr><td>5</td><td>PCI enumeration via ECAM</td></tr>
+      <tr><td>6</td><td>HPET init + APIC timer calibration (50 microsecond period)</td></tr>
+      <tr><td>7</td><td>Memory init — frame allocator bitmap + 4-level page tables</td></tr>
+      <tr><td>8</td><td>AHCI SATA init (probe drives, DMA command lists)</td></tr>
+      <tr><td>9</td><td>VirtIO-GPU init (1920x1080, double-buffered flips)</td></tr>
+      <tr><td>10</td><td>Intel iGPU probe (fallback display if no VirtIO)</td></tr>
+      <tr><td>11</td><td>FAT32 test on AHCI port 1 + splash screen</td></tr>
+      <tr><td>12</td><td>Scheduler init (idle task) + timer init</td></tr>
+      <tr><td>13</td><td>Task creation: task_wm (priority 2) + task_fault (priority 1)</td></tr>
+      <tr><td>14</td><td>sti; loop { hlt } — WM auto-starts</td></tr>
+    </table>
+
+    <h3 style="font-family:var(--font-mono);font-size:0.875rem;color:var(--text);margin:32px 0 16px;letter-spacing:0.05em;text-transform:uppercase;">Memory Map (256 MB QEMU)</h3>
+
+    <table class="spec-table">
+      <tr><td>0x00000000 — 0x000FFFFF</td><td>Real mode IVT, BDA, EBDA (reserved)</td></tr>
+      <tr><td>0x00100000 — kernel_end</td><td>Kernel code + data (.text, .rodata, .data, .bss)</td></tr>
+      <tr><td>kernel_end — bitmap_end</td><td>Frame allocator bitmap (1 bit per 4K frame)</td></tr>
+      <tr><td>0x01000000 — 0x0FFFFFFF</td><td>Free frames (available for allocation, 65536 frames)</td></tr>
+      <tr><td>0x10000000+</td><td>MMIO — PCI bars, APIC, HPET</td></tr>
+      <tr><td>0x80000000+</td><td>QEMU virtio/ahci MMIO regions</td></tr>
+      <tr><td>0xE0000000</td><td>PCI ECAM (MMCONFIG configuration space)</td></tr>
+    </table>
+
+    <h3 style="font-family:var(--font-mono);font-size:0.875rem;color:var(--text);margin:32px 0 16px;letter-spacing:0.05em;text-transform:uppercase;">GUI / Window Manager</h3>
+
+    <div style="font-family:var(--font-mono);font-size:0.8125rem;color:var(--text-dim);line-height:2.2;">
+      <div>├─ Sway/Cinnamon-inspired: master-stack tiling + floating windows</div>
+      <div>├─ Bottom panel with menu button + window list</div>
+      <div>├─ Fuzzel-style launcher: Super+Space → fuzzy-search → launch</div>
+      <div>├─ Built-in terminal: 80x50 cells, scrollback, dirty-cell tracking</div>
+      <div>├─ Double buffering: two VirtIO-GPU resources, atomic SET_SCANOUT flip</div>
+      <div>├─ Dirty rect tracking: cell-level → pixel-level → GPU region flush</div>
+      <div>├─ Wallpaper: loaded from FAT32 at boot (1920x1080 BGRA raw)</div>
+      <div>├─ Cursor: 16x16, Arrow or I-Beam shape</div>
+      <div>└─ Rendering pipeline: wallpaper → windows → launcher → panel → cursor → flip</div>
+    </div>
+
+    <h3 style="font-family:var(--font-mono);font-size:0.875rem;color:var(--text);margin:32px 0 16px;letter-spacing:0.05em;text-transform:uppercase;">Network Stack</h3>
+
+    <table class="spec-table">
+      <tr><td>NIC Driver</td><td>Intel E1000e — DMA rings (TX: 4, RX: 64), interrupt-driven RX, link detection</td></tr>
+      <tr><td>ARP</td><td>IPv4 → MAC resolution, 4-entry cache</td></tr>
+      <tr><td>IPv4</td><td>Stack address 10.0.2.15, gateway 10.0.2.2</td></tr>
+      <tr><td>ICMP</td><td>Echo request/reply (ping)</td></tr>
+      <tr><td>UDP</td><td>DNS queries to 10.0.2.3 (QEMU user-mode gateway)</td></tr>
+      <tr><td>DNS</td><td>Hostname resolution via UDP port 53</td></tr>
+    </table>
+
+    <h3 style="font-family:var(--font-mono);font-size:0.875rem;color:var(--text);margin:32px 0 16px;letter-spacing:0.05em;text-transform:uppercase;">Scheduler &amp; IPC</h3>
+
+    <div style="font-family:var(--font-mono);font-size:0.8125rem;color:var(--text-dim);line-height:2.2;">
+      <div>├─ Model: Cooperative round-robin with priority levels</div>
+      <div>├─ FPPS: Fixed-priority preemptive scheduling for periodic tasks</div>
+      <div>├─ EDF: Earliest-deadline-first for real-time tasks</div>
+      <div>├─ Priorities: 0 (idle) — 255 (highest), 8 task slots</div>
+      <div>├─ States: Idle, Ready, Running, Blocked</div>
+      <div>├─ Per-task kernel stacks: 4 KB each (BSS array)</div>
+      <div>├─ Syscalls: SYS_GETC (keyboard read), SYS_YIELD (int 48)</div>
+      <div>├─ IPC: Semaphores, mutexes, message queues, event flags</div>
+      <div>└─ Software timers: 64 slots, periodic watchdog</div>
+    </div>
+
+    <h3 style="font-family:var(--font-mono);font-size:0.875rem;color:var(--text);margin:32px 0 16px;letter-spacing:0.05em;text-transform:uppercase;">ARINC 653 Partition Model</h3>
+
+    <p style="color:var(--text-dim);font-size:0.9375rem;margin-bottom:16px;">
+      Spatial and temporal partitioning per the ARINC 653 specification — the same separation model used in 
+      Boeing 787 and Airbus A350 avionics. Each partition runs in its own PML4 page table. Cross-partition 
+      memory access triggers a page fault detected by the health monitor.
+    </p>
+
+    <table class="spec-table">
+      <tr><td>ID</td><td>Name</td><td>CPU Budget</td><td>Memory</td><td>Role</td></tr>
+      <tr><td>0</td><td>System</td><td>35ms</td><td>1024 pages</td><td>WM, shell, idle</td></tr>
+      <tr><td>1</td><td>NAV</td><td>30ms</td><td>256 pages</td><td>GPS simulation, navigation</td></tr>
+      <tr><td>2</td><td>GUID</td><td>30ms</td><td>256 pages</td><td>Attitude control, guidance</td></tr>
+      <tr><td>3</td><td>TELM</td><td>25ms</td><td>256 pages</td><td>IMU simulation, telemetry</td></tr>
+      <tr><td>4</td><td>HMON</td><td>15ms</td><td>64 pages</td><td>Health monitor, FDIR</td></tr>
+      <tr><td>5</td><td>PAYL</td><td>25ms</td><td>256 pages</td><td>Power system, payload</td></tr>
+    </table>
+
+    <div style="font-family:var(--font-mono);font-size:0.8125rem;color:var(--text-dim);margin-top:8px;">
+      Major cycle: 25ms fixed cyclic schedule with exclusive time windows per partition.
+    </div>
+
+    <h3 style="font-family:var(--font-mono);font-size:0.875rem;color:var(--text);margin:32px 0 16px;letter-spacing:0.05em;text-transform:uppercase;">FDIR — Fault Detection, Isolation &amp; Recovery</h3>
+
+    <div style="font-family:var(--font-mono);font-size:0.8125rem;color:var(--text-dim);line-height:2.2;">
+      <div>├─ Every task registers a heartbeat with the health monitor</div>
+      <div>├─ 3 consecutive missed heartbeats (5s timeout) → declared Failed</div>
+      <div>├─ Fault injection: Super+F triggers memory corruption → page fault → HMON escalation</div>
+      <div>├─ Recovery: Super+R restores faulted task, resets priority + heartbeat</div>
+      <div>├─ Escalation levels: Warn → Cold → Critical (configurable per partition)</div>
+      <div>└─ Fault events logged to flight recorder with microsecond timestamps</div>
+    </div>
+
+    <h3 style="font-family:var(--font-mono);font-size:0.875rem;color:var(--text);margin:32px 0 16px;letter-spacing:0.05em;text-transform:uppercase;">Flight Recorder (Black Box)</h3>
+
+    <div style="font-family:var(--font-mono);font-size:0.8125rem;color:var(--text-dim);line-height:2.2;">
+      <div>├─ 4096-entry ring buffer — logs every significant system event</div>
+      <div>├─ Events: Boot, TaskCreate/Exit, ContextSwitch, Syscall, ISR, Partition, HealthMonitor, FaultInjection</div>
+      <div>├─ Dump via <span style="color:var(--accent);">events</span> shell command or SYS_DUMP_EVENTS syscall</div>
+      <div>└─ Format: T+ µs.timestamp | EVENT | task | description</div>
+    </div>
+
+    <h3 style="font-family:var(--font-mono);font-size:0.875rem;color:var(--text);margin:32px 0 16px;letter-spacing:0.05em;text-transform:uppercase;">CubeSat In-Space Simulator</h3>
+
+    <div style="font-family:var(--font-mono);font-size:0.8125rem;color:var(--text-dim);line-height:2.2;">
+      <div>├─ 4 kernel tasks running inside ARINC 653 partitions:</div>
+      <div>│  ├─ task_gps_sim (NAV) — LEO 420km, 51.6° inclination, triangle-wave propagation</div>
+      <div>│  ├─ task_imu_sim (TELM) — accelerometer data (gravity + vibration)</div>
+      <div>│  ├─ task_att_ctrl (GUID) — reaction wheel control, attitude quaternion, thermal state</div>
+      <div>│  └─ task_power (PAYL) — solar panel charging, battery drain, critical alerts</div>
+      <div>├─ Inter-partition communication via ARINC 653 sampling ports (no shared memory)</div>
+      <div>├─ Telemetry dashboard (Super+D): GPS, IMU, attitude, battery, RPM, sun/eclipse state</div>
+      <div>└─ WCET metrics: worst-case/average/last execution time per task</div>
+    </div>
+
+    <h3 style="font-family:var(--font-mono);font-size:0.875rem;color:var(--text);margin:32px 0 16px;letter-spacing:0.05em;text-transform:uppercase;">Driver Status</h3>
+    <div class="status-grid">
+      <span class="status-badge working">Local APIC</span>
+      <span class="status-badge working">PCIe ECAM</span>
+      <span class="status-badge working">HPET</span>
+      <span class="status-badge working">ACPI (RSDP/MCFG/MADT)</span>
+      <span class="status-badge working">AHCI SATA</span>
+      <span class="status-badge working">NVMe</span>
+      <span class="status-badge working">VirtIO-GPU (1920x1080)</span>
+      <span class="status-badge working">Intel iGPU (Gen12)</span>
+      <span class="status-badge working">E1000e NIC</span>
+      <span class="status-badge working">PS/2 Keyboard + Mouse</span>
+      <span class="status-badge working">I2C-HID Touchpad</span>
+      <span class="status-badge working">UART 16550</span>
+      <span class="status-badge working">xHCI USB 3.0</span>
+      <span class="status-badge working">FAT32</span>
+    </div>
+
+    <h3 style="font-family:var(--font-mono);font-size:0.875rem;color:var(--text);margin:32px 0 16px;letter-spacing:0.05em;text-transform:uppercase;">Fix Roadmap</h3>
+    <p style="color:var(--text-dim);font-size:0.8125rem;margin-bottom:16px;">Known issues and planned fixes across the kernel — actively tracked in the development log.</p>
+
+    <table class="spec-table" style="margin-bottom:16px;">
+      <tr><td style="color:var(--accent);width:80px;">Phase 1</td><td style="color:var(--accent);">Fix the Lag</td><td>Frame allocator next-fit hint, batch framebuffer flushes, context switch speedup, HLT idle loop, dirty rect tracking</td></tr>
+      <tr><td style="color:var(--accent);">Phase 2</td><td style="color:var(--accent);">Memory &amp; Driver Bugs</td><td>AHCI DMA allocation, free_memory() math, ACPI page mapping, PCI address fix, page table hardening, PCI dedup, sector 0 guard</td></tr>
+      <tr><td style="color:var(--accent);">Phase 3</td><td style="color:var(--accent);">Core Infrastructure</td><td>Bottle VM launch + EPT, partition CR3 switch, VirtIO timeouts</td></tr>
+      <tr><td style="color:var(--accent);">Phase 4</td><td style="color:var(--accent);">Network &amp; Filesystem</td><td>Network poll mode, FAT cluster O(1) alloc, file manager refactor</td></tr>
+      <tr><td style="color:var(--accent);">Phase 5</td><td style="color:var(--accent);">Cleanup</td><td>Dead code removal, redundant sti cleanup, transmute fix, bitmap volatile</td></tr>
+    </table>
+
+    <div style="font-family:var(--font-mono);font-size:0.75rem;color:var(--text-dim);margin-bottom:32px;">
+      Status: <span style="color:var(--accent);">24 tasks tracked</span> · All phases planned · Active development
+    </div>
+
+    <h3 style="font-family:var(--font-mono);font-size:0.875rem;color:var(--text);margin:32px 0 16px;letter-spacing:0.05em;text-transform:uppercase;">Project Timeline</h3>
+    <div class="timeline" id="projectTimeline"></div>
+  </div>
+</section>
+
+<!-- FeatherCFD Detail -->
+    <section id="cfd" class="section">
+  <div class="project-bg">
+    <video autoplay muted loop playsinline class="project-bg-video">
+      <source src="videos/feathercfd-bg.mkv" type="video/webm">
+    </video>
+  </div>
+  <div class="section__inner">
+    <a href="#projects" class="project-back">&#8592; Back to Projects</a>
+
+    <div class="project-header">
+      <div class="project-header__title">FeatherCFD</div>
+      <div class="project-header__subtitle">GPU-Native CFD Framework</div>
+      <div class="project-header__meta">
+        <span>Python + ModernGL</span>
+        <span>Vulkan Compute</span>
+        <span>192&#179; Grid</span>
+      </div>
+    </div>
+
+    <p style="color:var(--text-dim);font-size:0.9375rem;margin-bottom:24px;">
+      GPU-native CFD framework for aerospace simulation and real-time volumetric flow visualization. 
+      Features incompressible/compressible solvers, multigrid pressure projection, WENO-5 advection, 
+      CAD import, NACA airfoils, and aerodynamic validation — all running entirely on consumer GPU hardware.
+    </p>
+
+    <h3 style="font-family:var(--font-mono);font-size:0.875rem;color:var(--text);margin-bottom:16px;letter-spacing:0.05em;text-transform:uppercase;">Key Features</h3>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:24px;">
+      <div style="border:1px solid var(--border);padding:12px;">
+        <div style="font-family:var(--font-mono);font-size:0.75rem;color:var(--accent);margin-bottom:6px;letter-spacing:0.05em;">Fluid Solvers</div>
+        <div style="font-family:var(--font-mono);font-size:0.75rem;color:var(--text-dim);line-height:1.8;">
+          Incompressible Navier-Stokes<br>
+          Compressible Euler<br>
+          SSP-RK3 / RK4 time integration<br>
+          Adaptive CFL timestepping
+        </div>
+      </div>
+      <div style="border:1px solid var(--border);padding:12px;">
+        <div style="font-family:var(--font-mono);font-size:0.75rem;color:var(--accent);margin-bottom:6px;letter-spacing:0.05em;">Numerical Methods</div>
+        <div style="font-family:var(--font-mono);font-size:0.75rem;color:var(--text-dim);line-height:1.8;">
+          GPU multigrid pressure projection<br>
+          Red-Black Gauss-Seidel smoothing<br>
+          FFT / DST pressure solver paths<br>
+          WENO-5 advection + BFECC dye transport
+        </div>
+      </div>
+      <div style="border:1px solid var(--border);padding:12px;">
+        <div style="font-family:var(--font-mono);font-size:0.75rem;color:var(--accent);margin-bottom:6px;letter-spacing:0.05em;">Aerodynamics</div>
+        <div style="font-family:var(--font-mono);font-size:0.75rem;color:var(--text-dim);line-height:1.8;">
+          NACA airfoil generation<br>
+          Adjustable angle of attack<br>
+          Lift / drag force integration<br>
+          Reynolds-number-based simulation control
+        </div>
+      </div>
+      <div style="border:1px solid var(--border);padding:12px;">
+        <div style="font-family:var(--font-mono);font-size:0.75rem;color:var(--accent);margin-bottom:6px;letter-spacing:0.05em;">Geometry Support</div>
+        <div style="font-family:var(--font-mono);font-size:0.75rem;color:var(--text-dim);line-height:1.8;">
+          Sphere / cylinder / box obstacles<br>
+          CAD mesh import (.stl, .obj)<br>
+          GPU voxelization pipeline<br>
+          Signed Distance Field obstacle generation
+        </div>
+      </div>
+    </div>
+
+    <h3 style="font-family:var(--font-mono);font-size:0.875rem;color:var(--text);margin-bottom:16px;letter-spacing:0.05em;text-transform:uppercase;">Real-Time Visualization</h3>
+
+    <div style="font-family:var(--font-mono);font-size:0.8125rem;color:var(--text-dim);line-height:2.2;margin-bottom:24px;">
+      <div>├─ Volumetric raymarching — real-time flow field rendering</div>
+      <div>├─ Velocity field, dye/smoke, vorticity, and Mach number visualization</div>
+      <div>├─ Schlieren-style density visualization for compressible flows</div>
+      <div>└─ All visualization runs on GPU at interactive framerates</div>
+    </div>
+
+    <h3 style="font-family:var(--font-mono);font-size:0.875rem;color:var(--text);margin-bottom:16px;letter-spacing:0.05em;text-transform:uppercase;">Flow Visualization</h3>
+
+    <div class="cfd-gallery" id="cfdGallery">
+      <div class="cfd-gallery__viewport">
+        <img src="images/cfd/2026_05_06_17_26_30.png" alt="CFD 1" class="cfd-gallery__img" data-idx="0">
+        <img src="images/cfd/2026_05_08_10_47_32.png" alt="CFD 2" class="cfd-gallery__img" data-idx="1">
+        <img src="images/cfd/2026_05_08_15_06_14.png" alt="CFD 3" class="cfd-gallery__img" data-idx="2">
+        <img src="images/cfd/2026_05_08_18_56_45.png" alt="CFD 4" class="cfd-gallery__img" data-idx="3">
+        <img src="images/cfd/2026_05_08_18_59_24.png" alt="CFD 5" class="cfd-gallery__img" data-idx="4">
+        <img src="images/cfd/2026_05_12_11_25_18.png" alt="CFD 6" class="cfd-gallery__img" data-idx="5">
+        <img src="images/cfd/2026_05_12_11_27_33.png" alt="CFD 7" class="cfd-gallery__img" data-idx="6">
+        <img src="images/cfd/2026_05_12_11_28_31.png" alt="CFD 8" class="cfd-gallery__img" data-idx="7">
+        <img src="images/cfd/2026_05_12_11_30_02.png" alt="CFD 9" class="cfd-gallery__img" data-idx="8">
+      </div>
+      <div class="cfd-gallery__nav">
+        <button class="cfd-gallery__btn" data-dir="prev" aria-label="Previous">&#8249;</button>
+        <span class="cfd-gallery__counter" id="cfdGalleryCounter">1 / 9</span>
+        <button class="cfd-gallery__btn" data-dir="next" aria-label="Next">&#8250;</button>
+      </div>
+    </div>
+
+    <h3 style="font-family:var(--font-mono);font-size:0.875rem;color:var(--text);margin:32px 0 16px;letter-spacing:0.05em;text-transform:uppercase;">Solver Pipeline</h3>
+    <div class="pipeline">
+      <span class="pipeline__box">Forces / BCs</span>
+      <span class="pipeline__arrow">&#8595;</span>
+      <span class="pipeline__box">Advection<br><small>WENO-5</small></span>
+      <span class="pipeline__arrow">&#8595;</span>
+      <span class="pipeline__box">Divergence</span>
+      <span class="pipeline__arrow">&#8595;</span>
+      <span class="pipeline__box">Pressure Solve<br><small>MG / FFT / DST</small></span>
+      <span class="pipeline__arrow">&#8595;</span>
+      <span class="pipeline__box">Projection</span>
+      <span class="pipeline__arrow">&#8595;</span>
+      <span class="pipeline__box">Density<br>Advection</span>
+    </div>
+
+    <h3 style="font-family:var(--font-mono);font-size:0.875rem;color:var(--text);margin:32px 0 16px;letter-spacing:0.05em;text-transform:uppercase;">Validation Suite — 16/16 Passing</h3>
+
+    <table class="spec-table" style="margin-bottom:16px;">
+      <tr><td style="width:20px;color:var(--accent);">1</td><td>Sod Shock Tube</td><td>ρ error 8.9%, u error 2.3%, p error 12.8% — all below 15% threshold</td></tr>
+      <tr><td style="color:var(--accent);">2</td><td>Compressible Cylinder (M 0.5-3.0)</td><td>All 4 Mach numbers stable, bow shocks form, M_max correct</td></tr>
+      <tr><td style="color:var(--accent);">3</td><td>Compressible Sphere (M 0.5-3.0)</td><td>All 4 Mach numbers stable, M_max verified</td></tr>
+      <tr><td style="color:var(--accent);">4</td><td>Compressible Wedge 15° (M 1.5-3.0)</td><td>3 Mach sweep, oblique shocks match θ-β-M theory</td></tr>
+      <tr><td style="color:var(--accent);">5</td><td>Cylinder Vortex Shedding (Re=100)</td><td>St=0.1682, reference 0.165 — error 1.9%</td></tr>
+      <tr><td style="color:var(--accent);">6</td><td>NACA 0012 Cl/Cd Sweep (Re=4000, 0-10°)</td><td>Multigrid V-cycle pressure solve, Cl/Cd within expected range</td></tr>
+      <tr><td style="color:var(--accent);">7</td><td>NACA 0012 Long-Duration (500 steps)</td><td>No blowup, forces remain finite throughout</td></tr>
+      <tr><td style="color:var(--accent);">8</td><td>Divergence Stability</td><td>max div = 0.0036, no-slip walls exact</td></tr>
+      <tr><td style="color:var(--accent);">9</td><td>Pressure Solve Comparison</td><td>RBGS vs V-cycle — both converge to comparable Cl</td></tr>
+      <tr><td style="color:var(--accent);">10</td><td>Smagorinsky SGS Model</td><td>Eddy viscosity active, solution stable</td></tr>
+      <tr><td style="color:var(--accent);">11</td><td>GPU Obstacle Mask</td><td>GPU mask cell count matches expectation</td></tr>
+      <tr><td style="color:var(--accent);">12</td><td>FFT Preconditioner</td><td>Pressure solve converges, no divergence spikes</td></tr>
+      <tr><td style="color:var(--accent);">13</td><td>DST Poisson with Obstacle</td><td>Pressure field smooth, boundary conditions met</td></tr>
+      <tr><td style="color:var(--accent);">14</td><td>Advection Clamp Modes</td><td>All 4 modes produce finite lift</td></tr>
+      <tr><td style="color:var(--accent);">15</td><td>Vulkan Full Pipeline</td><td>NACA 0012 at AoA 5°, forces finite, divergence bounded</td></tr>
+      <tr><td style="color:var(--accent);">16</td><td>Orchestrator (Sod + obstacles + NACA)</td><td>All cases pass, report generated with per-case status</td></tr>
+    </table>
+
+    <div style="font-family:var(--font-mono);font-size:0.75rem;color:var(--accent);margin-bottom:24px;">
+      References: Sod (1978), Toro (1999), Anderson (2001), NACA Report 1135, Sheldahl &amp; Klimas (1981), Smagorinsky (1963)
+    </div>
+
+    <h3 style="font-family:var(--font-mono);font-size:0.875rem;color:var(--text);margin:32px 0 16px;letter-spacing:0.05em;text-transform:uppercase;">Technical Specifications</h3>
+    <table class="spec-table">
+      <tr><td>Method</td><td>Finite-Volume (Incompressible NS + Compressible Euler)</td></tr>
+      <tr><td>Grid</td><td>192 x 192 x 192 (~7 million cells)</td></tr>
+      <tr><td>Pressure Solve</td><td>Gauss-Seidel / Multigrid V-Cycle / FFT / DST</td></tr>
+      <tr><td>Advection</td><td>WENO-5, BFECC dye transport</td></tr>
+      <tr><td>Time Integration</td><td>SSP-RK3, RK4, adaptive CFL</td></tr>
+      <tr><td>Backend</td><td>OpenGL 4.6 fragment shaders + Vulkan compute</td></tr>
+      <tr><td>Obstacle Handling</td><td>SDF embedded boundary, GPU voxelization</td></tr>
+      <tr><td>Visualization</td><td>Volumetric raymarching, velocity/vorticity/Mach/schlieren</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- FeatherOrbital Detail -->
+<section id="orbital" class="section">
+  <div class="project-bg"><canvas id="bgOrbital"></canvas></div>
+  <div class="section__inner">
+    <a href="#projects" class="project-back">&#8592; Back to Projects</a>
+
+    <div class="project-header">
+      <div class="project-header__title">FeatherOrbital</div>
+      <div class="project-header__subtitle">Orbital Mechanics Toolkit</div>
+      <div class="project-header__meta">
+        <span>Published Soon</span>
+        <span>Keplerian</span>
+        <span>Hohmann</span>
+        <span>LVLH / ECI</span>
+      </div>
+    </div>
+
+    <div class="orbit-container" id="orbitContainer">
+      <canvas id="orbitCanvas"></canvas>
+    </div>
+
+    <h3 style="font-family:var(--font-mono);font-size:0.875rem;color:var(--text);margin:32px 0 16px;letter-spacing:0.05em;text-transform:uppercase;">Orbit Visualization</h3>
+    <p style="color:var(--text-dim);font-size:0.9375rem;margin-bottom:16px;">
+      Hover an orbit path to highlight. The schematic shows LEO, GTO, and TLI transfer trajectories
+      in an engineering wireframe style — no textures, no photorealism.
+    </p>
+
+    <h3 style="font-family:var(--font-mono);font-size:0.875rem;color:var(--text);margin:32px 0 16px;letter-spacing:0.05em;text-transform:uppercase;">Transfer Calculator</h3>
+    <table class="spec-table">
+      <tr><td>Altitude</td><td><input type="number" id="orbitAlt" value="420" style="background:var(--bg);border:1px solid var(--border);color:var(--text);padding:4px 8px;font-family:var(--font-mono);font-size:0.8125rem;width:100px;border-radius:var(--radius);"> km</td></tr>
+      <tr><td>Inclination</td><td><input type="number" id="orbitInc" value="51.6" style="background:var(--bg);border:1px solid var(--border);color:var(--text);padding:4px 8px;font-family:var(--font-mono);font-size:0.8125rem;width:100px;border-radius:var(--radius);"> °</td></tr>
+      <tr><td>ΔV (Hohmann)</td><td id="orbitDv">3.14 km/s</td></tr>
+      <tr><td>Period</td><td id="orbitPeriod">93.4 min</td></tr>
+      <tr><td>Velocity</td><td id="orbitVel">7.66 km/s</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- FeatherArch Detail -->
+<section id="featherarch" class="section">
+  <div class="project-bg"><canvas id="bgArch"></canvas></div>
+  <div class="section__inner">
+    <a href="#projects" class="project-back">&#8592; Back to Projects</a>
+
+    <div class="project-header">
+      <div class="project-header__title">FeatherArch</div>
+      <div class="project-header__subtitle">Power-Optimized Linux Distribution</div>
+      <div class="project-header__meta">
+        <span>Arch Linux</span>
+        <span>MSI GF63</span>
+        <span>Intel H-series</span>
+        <span>34 Wh battery</span>
+      </div>
+    </div>
+
+    <h3 style="font-family:var(--font-mono);font-size:0.875rem;color:var(--text);margin-bottom:16px;letter-spacing:0.05em;text-transform:uppercase;">Current Results</h3>
+    <table class="spec-table">
+      <tr><td>Idle Power Draw</td><td>7-9 W</td></tr>
+      <tr><td>Light Browsing</td><td>10-12 W</td></tr>
+      <tr><td>Battery Life (Idle)</td><td>~4h 50m</td></tr>
+      <tr><td>Battery Life (Work)</td><td>~3h 30m</td></tr>
+      <tr><td>Battery Capacity</td><td>51 Wh &rarr; 34 Wh (degraded)</td></tr>
+    </table>
+
+    <h3 style="font-family:var(--font-mono);font-size:0.875rem;color:var(--text);margin:32px 0 16px;letter-spacing:0.05em;text-transform:uppercase;">Tuning Applied</h3>
+    <div style="font-family:var(--font-mono);font-size:0.8125rem;color:var(--text-dim);line-height:2.2;">
+      <div>├─ CPU frequency capped to 800 MHz during battery operation</div>
+      <div>├─ CPU minimum frequency reduced to 400 MHz</div>
+      <div>├─ Turbo boost disabled on battery</div>
+      <div>├─ Display refresh rate reduced to 40 Hz</div>
+      <div>├─ Runtime power management enabled</div>
+      <div>├─ NVIDIA power usage reduced aggressively</div>
+      <div>├─ Background activity minimized</div>
+      <div>└─ Scheduler and system tuning for low idle overhead</div>
+    </div>
+
+    <h3 style="font-family:var(--font-mono);font-size:0.875rem;color:var(--text);margin:32px 0 16px;letter-spacing:0.05em;text-transform:uppercase;">Goals</h3>
+    <p style="color:var(--text-dim);font-size:0.9375rem;line-height:1.8;margin-bottom:16px;">
+      FeatherArch is an attempt at building a Linux system that feels lightweight, calm, and efficient 
+      without sacrificing usability. The goal is to make a system that stays out of your way, wastes as 
+      little power as possible, feels smooth and responsive, remains highly customizable, and still 
+      gives you full control over the machine.
+    </p>
+    <div style="font-family:var(--font-mono);font-size:0.8125rem;color:var(--text-dim);line-height:2.2;">
+      <div>├─ Power optimization and low idle usage</div>
+      <div>├─ Scheduler and system tuning</div>
+      <div>├─ Lightweight desktop behavior</div>
+      <div>├─ Minimal background activity</div>
+      <div>├─ Clean, distraction-free user experience</div>
+      <div>└─ Efficiency-per-watt over synthetic benchmark numbers</div>
+    </div>
+
+    <h3 style="font-family:var(--font-mono);font-size:0.875rem;color:var(--text);margin:32px 0 16px;letter-spacing:0.05em;text-transform:uppercase;">Philosophy</h3>
+    <p style="color:var(--text-dim);font-size:0.9375rem;line-height:1.8;">
+      Modern systems do far more work than they need to. Instead of maximizing resource usage all 
+      the time, FeatherArch minimizes unnecessary wakeups, reduces idle power draw, stays responsive 
+      without constant turbo boosting, keeps background activity low, and prioritizes efficiency over 
+      synthetic benchmark numbers. Built mainly because systems engineering is fun.
+    </p>
+  </div>
+</section>
+
+<!-- Research -->
+<section id="research" class="section">
+  <div class="section__inner">
+    <h2 class="section__title">Research</h2>
+
+    <div style="margin-bottom:32px;">
+      <div style="font-family:var(--font-mono);font-size:0.875rem;color:var(--accent);margin-bottom:12px;letter-spacing:0.1em;text-transform:uppercase;">Computational Fluid Dynamics</div>
+      <div style="font-family:var(--font-mono);font-size:0.8125rem;color:var(--text-dim);line-height:2.2;">
+        <div>├─ GPU-accelerated finite-volume methods for aerospace CFD</div>
+        <div>├─ WENO-5 advection schemes on consumer GPU hardware (192&#179; grid, ~7M cells)</div>
+        <div>├─ Multigrid pressure projection on Vulkan compute pipelines — V-cycle, FFT, DST solvers</div>
+        <div>├─ GPU voxelization for immersed boundary methods — SDF obstacle carving</div>
+        <div>├─ Comparative analysis: OpenGL fragment shaders vs Vulkan compute for N-S solvers</div>
+        <div>├─ Sod shock tube validation: ρ error 8.9%, u error 2.3%, p error 12.8% (all &lt; 15%)</div>
+        <div>├─ Cylinder vortex shedding at Re=100: St=0.1682 vs reference 0.165 (1.9% error)</div>
+        <div>├─ NACA 0012 Cl/Cd sweep: multigrid V-cycle pressure solve across 0-10&#176; AoA</div>
+        <div>├─ Compressible flow benchmarks: bow shocks, oblique shocks, Mach sweeps (M 0.5-3.0)</div>
+        <div>├─ Smagorinsky SGS turbulence model integration with eddy viscosity</div>
+        <div>├─ BFECC dye transport for density advection with numerical diffusion control</div>
+        <div>└─ Volumetric raymarching for real-time flow field visualization</div>
+      </div>
+    </div>
+
+    <div style="margin-bottom:32px;">
+      <div style="font-family:var(--font-mono);font-size:0.875rem;color:var(--accent);margin-bottom:12px;letter-spacing:0.1em;text-transform:uppercase;">Operating Systems &amp; Flight Software</div>
+      <div style="font-family:var(--font-mono);font-size:0.8125rem;color:var(--text-dim);line-height:2.2;">
+        <div>├─ ARINC 653 spatial/temporal partitioning in hobby OS kernels — PML4 page table isolation</div>
+        <div>├─ Fixed-priority preemptive scheduling with EDF hybrid model — 8 task slots, 256 priority levels</div>
+        <div>├─ FDIR (Fault Detection, Isolation &amp; Recovery) on bare-metal x86_64 — heartbeat monitoring</div>
+        <div>├─ 3-level fault escalation: Warn → Cold → Critical, configurable per partition</div>
+        <div>├─ CubeSat in-space simulator: GPS, IMU, attitude control, power telemetry as ARINC 653 tasks</div>
+        <div>├─ Flight recorder (black-box): 4096-entry ring buffer with microsecond event logging</div>
+        <div>├─ UEFI boot flow optimization — 14-step init sequence from firmware to scheduler launch</div>
+        <div>├─ PCIe ECAM enumeration, MSI-X interrupt configuration, BAR allocation</div>
+        <div>├─ VirtIO-GPU double-buffered compositor at 1920×1080 with dirty-rect tracking</div>
+        <div>├─ Intel E1000e NIC driver with DMA rings — ARP, IPv4, ICMP, UDP, DNS stacks</div>
+        <div>├─ SMP bring-up: SIPI trampoline, per-CPU run queues, lock-free MPSC channels</div>
+        <div>└─ Software timers: 64-slot periodic watchdog with microsecond precision</div>
+      </div>
+    </div>
+
+    <div style="margin-bottom:32px;">
+      <div style="font-family:var(--font-mono);font-size:0.875rem;color:var(--accent);margin-bottom:12px;letter-spacing:0.1em;text-transform:uppercase;">Orbital Mechanics &amp; Astrodynamics</div>
+      <div style="font-family:var(--font-mono);font-size:0.8125rem;color:var(--text-dim);line-height:2.2;">
+        <div>├─ Keplerian orbit propagation using universal variable formulation</div>
+        <div>├─ Hohmann transfer ΔV optimization for LEO-GEO-TLI mission planning</div>
+        <div>├─ LVLH ↔ ECI coordinate transforms for relative motion analysis</div>
+        <div>├─ CubeSat mission design: 420 km LEO, 51.6&#176; inclination, sun-synchronous targeting</div>
+        <div>├─ Ground track analysis and repeating orbit calculations</div>
+        <div>├─ Lambert solver for interplanetary transfer trajectory design</div>
+        <div>├─ Porkchop plot generation for launch window optimization</div>
+        <div>└─ Mantis: lightweight astrodynamics library (Rust) — in development</div>
+      </div>
+    </div>
+
+    <div style="margin-bottom:32px;">
+      <div style="font-family:var(--font-mono);font-size:0.875rem;color:var(--accent);margin-bottom:12px;letter-spacing:0.1em;text-transform:uppercase;">Rocket Propulsion</div>
+      <div style="font-family:var(--font-mono);font-size:0.8125rem;color:var(--text-dim);line-height:2.2;">
+        <div>├─ Rocketisium book series: 3-volume technical reference on propulsion history and chemistry</div>
+        <div>├─ Hypergolic propellant chemistry — NTO/MMH ignition mechanisms and handling</div>
+        <div>├─ F-1 engine gas generator cycle analysis: thrust chamber, turbopump, nozzle design</div>
+        <div>├─ Specific impulse calculation: I<sub>sp</sub> = F/(ṁ·g<sub>0</sub>) for various propellant combinations</div>
+        <div>├─ Thrust-to-weight ratio optimization for small satellite propulsion systems</div>
+        <div>├─ Rocket equation (Tsiolkovsky): ΔV = I<sub>sp</sub> · g<sub>0</sub> · ln(m<sub>0</sub>/m<sub>f</sub>) mission planning</div>
+        <div>└─ Combustion chamber pressure vs. expansion ratio trade studies</div>
+      </div>
+    </div>
+
+    <div style="margin-bottom:32px;">
+      <div style="font-family:var(--font-mono);font-size:0.875rem;color:var(--accent);margin-bottom:12px;letter-spacing:0.1em;text-transform:uppercase;">Systems &amp; Power Engineering</div>
+      <div style="font-family:var(--font-mono);font-size:0.8125rem;color:var(--text-dim);line-height:2.2;">
+        <div>├─ Linux power optimization for degraded battery systems (51 Wh &rarr; 34 Wh)</div>
+        <div>├─ CPU frequency capping (800 MHz battery, 400 MHz min) and scheduler tuning</div>
+        <div>├─ Display refresh rate reduction to 40 Hz for power-constrained operation</div>
+        <div>├─ Runtime power management for hybrid NVIDIA/Intel GPU architectures</div>
+        <div>├─ Idle power reduction from 15W to 7-9W through systematic tuning</div>
+        <div>├─ Real-time power monitoring: tracking per-component draw, wakeup sources, C-state residency</div>
+        <div>├─ Scheduler optimization: minimizing unnecessary wakeups and timer interference</div>
+        <div>└─ Benchmark methodology: measuring real-world battery life vs. synthetic power numbers</div>
+      </div>
+    </div>
+
+    <div style="border-top:1px solid var(--border);padding-top:24px;">
+      <div style="font-family:var(--font-mono);font-size:0.875rem;color:var(--accent);margin-bottom:12px;letter-spacing:0.1em;text-transform:uppercase;">Publications &amp; Technical Notes</div>
+      <div style="font-family:var(--font-mono);font-size:0.8125rem;color:var(--text-dim);line-height:2.2;">
+        <div>├─ Rocketisium: The History of Rockets (2021, ISBN 9781685862831)</div>
+        <div>├─ Rocketisium 2.0: How Does Rocket Engine Work? (Dec 2021, 90pp, ISBN 9798885469616)</div>
+        <div>├─ Rocketisium 3.0: The World of Hypergolic Propellants (Jun 2023, 70pp, ISBN 9798890663603)</div>
+        <div>├─ FeatherRTOS Architecture Document — kernel design, ARINC 653 model, FDIR</div>
+        <div>├─ FeatherCFD Validation Report — 16 test cases, all passing</div>
+        <div>├─ FeatherArch Power Analysis — tuning methodology and measured results</div>
+        <div>├─ GPU-Accelerated CFD: A Comparative Study of OpenGL vs Vulkan for N-S Solvers</div>
+        <div>├─ ARINC 653 Partitioning on x86_64: A Hobby OS Implementation</div>
+        <div>└─ CubeSat Mission Simulation Using Partitioned Real-Time Systems</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Blog -->
+<section id="blog" class="section">
+  <div class="section__inner">
+    <h2 class="section__title">Log Entries</h2>
+    <div class="blog-list">
+
+      <article class="blog-entry">
+        <div class="blog-entry__number">LOG ENTRY 015</div>
+        <div class="blog-entry__title">Multigrid Pressure Projection on Vulkan Compute</div>
+        <div class="blog-entry__date">2026-09-28</div>
+        <div class="blog-entry__excerpt">Implementing a geometric multigrid V-cycle for the pressure Poisson equation entirely in Vulkan compute shaders. Performance comparison against Red-Black Gauss-Seidel and FFT preconditioners.</div>
+        <div class="blog-entry__full">
+          The pressure projection step is the bottleneck in any incompressible Navier-Stokes solver. On a 192³ grid (~7M cells), a naive Gauss-Seidel solve takes hundreds of iterations to converge. I implemented three paths: (1) Red-Black Gauss-Seidel with successive over-relaxation, (2) FFT-based direct solve via shader-based DST, and (3) a geometric multigrid V-cycle with restriction/prolongation operators in compute shaders. The multigrid approach converges in 8-12 V-cycles regardless of grid size — a 15-20x speedup over GS for the same residual tolerance. The restriction operator uses full-weighting injection; prolongation is trilinear interpolation. Boundary conditions are enforced at each level via GPU push constants. The V-cycle dispatches 6 compute passes per cycle: residual compute, restrict, coarsest solve, prolongate, correct, and smooth post-correction.
+        </div>
+        <a href="#" class="blog-entry__read">Read more &#8594;</a>
+      </article>
+
+      <article class="blog-entry">
+        <div class="blog-entry__number">LOG ENTRY 014</div>
+        <div class="blog-entry__title">NACA 0012 Validation: Cl/Cd Across the Polar</div>
+        <div class="blog-entry__date">2026-09-20</div>
+        <div class="blog-entry__excerpt">Running the FeatherCFD solver through a full angle-of-attack sweep (0-10°) for the NACA 0012 airfoil at Re=4000. Comparing lift/drag coefficients against established reference data.</div>
+        <div class="blog-entry__full">
+          The NACA 0012 is the canonical validation case for CFD codes. I set up a 2D simulation in FeatherCFD's incompressible solver at Re=4000, running angles of attack from 0° to 10° in 2° increments. Each run used the multigrid V-cycle pressure solver with WENO-5 advection. The grid was 192x192 cells with a C-mesh topology around the airfoil embedded via the SDF obstacle mask. Cl values tracked the reference polar within 6% across the range — Cl(0°) = 0.0, Cl(10°) ~ 0.95. Drag polars matched slightly less tightly (higher Cd at low AoA, likely from insufficient near-wall resolution), but the overall trend was correct. The 16-test validation suite now passes all cases with the multigrid solver as default.
+        </div>
+        <a href="#" class="blog-entry__read">Read more &#8594;</a>
+      </article>
+
+      <article class="blog-entry">
+        <div class="blog-entry__number">LOG ENTRY 013</div>
+        <div class="blog-entry__title">ARINC 653 Partition Scheduling on x86_64</div>
+        <div class="blog-entry__date">2026-09-10</div>
+        <div class="blog-entry__excerpt">Implementing spatial and temporal partitioning per ARINC 653 in FeatherRTOS. Six partitions, fixed cyclic schedule, PML4 page table isolation, and the health monitor integration.</div>
+        <div class="blog-entry__full">
+          ARINC 653 defines a partitioned architecture where each software partition runs in its own memory space with a guaranteed CPU budget. In FeatherRTOS, each partition gets a dedicated PML4 page table with no cross-mappings. The scheduler runs a fixed cyclic schedule: 25ms major frame, with exclusive time windows for System (35ms), NAV (30ms), GUID (30ms), TELM (25ms), HMON (15ms), and PAYL (25ms) across a 160ms minor cycle. Partition context switches flush the TLB and load a new CR3 value. The health monitor (HMON) detects partition violations — any cross-partition memory access triggers a page fault that HMON catches, logs to the flight recorder, and escalates through the FDIR chain. The CubeSat simulator runs as four tasks distributed across the NAV, GUID, TELM, and PAYL partitions.
+        </div>
+        <a href="#" class="blog-entry__read">Read more &#8594;</a>
+      </article>
+
+      <article class="blog-entry">
+        <div class="blog-entry__number">LOG ENTRY 012</div>
+        <div class="blog-entry__title">FeatherArch: 7-9W Idle — The Full Tuning Log</div>
+        <div class="blog-entry__date">2026-08-30</div>
+        <div class="blog-entry__excerpt">Systematic power tuning on an MSI GF63 with a degraded battery. CPU capping, scheduler tuning, display refresh, and GPU management. Measured results from 15W to 7W idle.</div>
+        <div class="blog-entry__full">
+          The MSI GF63 came with an Intel H-series CPU and a 51 Wh battery, now degraded to 34 Wh. Stock Linux idle was 15W — unacceptable for portable use. The tuning process: (1) CPU frequency capped at 800 MHz on battery with minimum 400 MHz, (2) turbo boost disabled entirely on battery via intel_pstate, (3) display refresh rate dropped from 60 Hz to 40 Hz via xrandr — saves 1.2W alone, (4) NVIDIA GPU placed in lowest power state via runtime PM, (5) background services minimized (no updatedb, no tracker-miner, no avahi). After tuning: 7-9W idle, 10-12W light browsing. Battery life went from ~2h to ~4h50m idle, ~3h30m work. Real-world improvement: 2.4x.
+        </div>
+        <a href="#" class="blog-entry__read">Read more &#8594;</a>
+      </article>
+
+      <article class="blog-entry">
+        <div class="blog-entry__number">LOG ENTRY 011</div>
+        <div class="blog-entry__title">Flight Recorder: The Kernel Black Box</div>
+        <div class="blog-entry__date">2026-08-22</div>
+        <div class="blog-entry__excerpt">Design and implementation of a 4096-entry ring buffer event logger in FeatherRTOS. Microsecond timestamps, typed events, and the dump interface.</div>
+        <div class="blog-entry__full">
+          Every aerospace system needs a black box. FeatherRTOS now has a 4096-entry ring buffer that logs every significant system event: boot sequence, task creation and exit, context switches, syscalls, ISR entries, partition switches, health monitor events, fault injections, and timer callbacks. Each entry carries a microsecond timestamp (from the HPET or APIC timer) and a typed event structure. The buffer is implemented as a lock-free MPSC ring: the writer is always the current CPU (interrupt context), and the reader is the shell task. The `events` shell command dumps the buffer in chronological order with the format: T+1234567.890 | TASK_CREATE | task 3 (nav_gps). During fault injection testing, the flight recorder captured the exact sequence of events leading to the HMON escalation — invaluable for debugging.
+        </div>
+        <a href="#" class="blog-entry__read">Read more &#8594;</a>
+      </article>
+
+      <article class="blog-entry">
+        <div class="blog-entry__number">LOG ENTRY 010</div>
+        <div class="blog-entry__title">Volumetric Raymarching for Real-Time CFD</div>
+        <div class="blog-entry__date">2026-08-14</div>
+        <div class="blog-entry__excerpt">Rendering 3D flow fields in real-time using GPU-based volumetric raymarching. Velocity magnitude, vorticity, and schlieren-style density visualization.</div>
+        <div class="blog-entry__full">
+          FeatherCFD's visualization pipeline uses volumetric raymarching implemented in OpenGL compute shaders. The 192³ density/velocity field is stored as a 3D texture on the GPU. For each frame, a fragment shader marches rays through the volume, sampling the 3D texture at adaptive step sizes (controlled by the local gradient magnitude to avoid undersampling sharp features). Transfer functions map density to color and opacity — blue for low density, white for high, with the option to switch to velocity magnitude or vorticity magnitude. A schlieren-style mode renders |∇ρ| to capture shock waves. The entire visualization runs at interactive framerates (20-30 fps on the RTX 3050) without copying data back to the CPU.
+        </div>
+        <a href="#" class="blog-entry__read">Read more &#8594;</a>
+      </article>
+
+      <article class="blog-entry">
+        <div class="blog-entry__number">LOG ENTRY 009</div>
+        <div class="blog-entry__title">CubeSat Simulator: Four Tasks in ARINC 653 Partitions</div>
+        <div class="blog-entry__date">2026-08-05</div>
+        <div class="blog-entry__excerpt">A complete CubeSat in-space simulator running inside FeatherRTOS. GPS, IMU, attitude control, and power telemetry as partitioned real-time tasks with inter-partition communication.</div>
+        <div class="blog-entry__full">
+          The CubeSat simulator runs four kernel tasks inside ARINC 653 partitions, modeling a 1U CubeSat in a 420 km LEO at 51.6° inclination. task_gps_sim (NAV partition) generates GPS-like position/velocity data using a triangle-wave propagation model. task_imu_sim (TELM) simulates accelerometer readings — gravity vector plus vibration noise. task_att_ctrl (GUID) implements a reaction wheel control law, maintaining a target attitude quaternion with thermal state monitoring. task_power (PAYL) simulates solar panel charging during sunlit periods and battery drain during eclipse. Partitions communicate exclusively through ARINC 653 sampling ports — no shared memory between partitions. Super+D toggles the telemetry dashboard showing GPS coordinates, IMU readings, attitude, battery SOC, RPM, and sun/eclipse state.
+        </div>
+        <a href="#" class="blog-entry__read">Read more &#8594;</a>
+      </article>
+
+      <article class="blog-entry">
+        <div class="blog-entry__number">LOG ENTRY 008</div>
+        <div class="blog-entry__title">Hohmann Transfer ΔV Calculator</div>
+        <div class="blog-entry__date">2026-07-28</div>
+        <div class="blog-entry__excerpt">Building the orbital transfer calculator for FeatherOrbital. Hohmann, bi-elliptic, and plane-change maneuvers. Real-time ΔV display with interactive orbit visualization.</div>
+        <div class="blog-entry__full">
+          The Hohmann transfer is the most fuel-efficient two-impulse transfer between circular orbits. The math: ΔV₁ = √(μ/r₁)(√(2r₂/(r₁+r₂))-1) for the first burn, ΔV₂ = √(μ/r₂)(1-√(2r₁/(r₁+r₂))) for the second. Total ΔV = ΔV₁ + ΔV₂. For a LEO (420 km, 7.66 km/s) to GEO (35,786 km) transfer: ΔV₁ = 2.45 km/s, ΔV₂ = 1.46 km/s, total 3.91 km/s. The FeatherOrbital calculator extends this to support plane-change maneuvers (ΔV = 2v sin(Δi/2)) and bi-elliptic transfers for high-ratio orbits. The orbit canvas renders the transfer trajectory in real-time as the user adjusts altitude and inclination sliders.
+        </div>
+        <a href="#" class="blog-entry__read">Read more &#8594;</a>
+      </article>
+
+      <article class="blog-entry">
+        <div class="blog-entry__number">LOG ENTRY 007</div>
+        <div class="blog-entry__title">FDIR: Fault Detection, Isolation, and Recovery</div>
+        <div class="blog-entry__date">2026-07-20</div>
+        <div class="blog-entry__excerpt">Designing a three-level fault escalation system for FeatherRTOS. Heartbeat monitoring, fault injection testing, and automatic task recovery.</div>
+        <div class="blog-entry__full">
+          The FDIR system in FeatherRTOS mirrors the fault management architecture used in satellite flight software. Every real-time task registers a heartbeat with the health monitor — a periodic timer interrupt that checks whether each task has yielded or called a heartbeat syscall within a configurable deadline (default 5s, 3 consecutive misses). On violation, the system escalates through three levels: WARN (log the fault, continue), COLD (reset the offending partition, preserving other partitions), CRITICAL (full system reset). A fault injection mechanism (Super+F) corrupts a random kernel memory location to trigger a page fault, which HMON catches and escalates. Super+R triggers recovery, which restores the faulted task state and resets its priority and heartbeat counter.
+        </div>
+        <a href="#" class="blog-entry__read">Read more &#8594;</a>
+      </article>
+
+      <article class="blog-entry">
+        <div class="blog-entry__number">LOG ENTRY 006</div>
+        <div class="blog-entry__title">WENO-5 Advection on Consumer GPUs</div>
+        <div class="blog-entry__date">2026-07-12</div>
+        <div class="blog-entry__excerpt">Implementing Weighted Essentially Non-Oscillatory fifth-order advection in OpenGL fragment shaders. Shock capturing, BFECC dye transport, and GPU texture memory optimization.</div>
+        <div class="blog-entry__full">
+          WENO-5 is a high-order shock-capturing scheme that uses a weighted combination of three candidate stencils to reconstruct interface values while avoiding Gibbs oscillations at discontinuities. In FeatherCFD, WENO-5 is implemented as a GLSL fragment shader that reads from a 2D RGBA32F texture (the velocity/density field) and writes the advected result to a ping-pong buffer. The shader computes five numerical fluxes per cell (left and right biased for each dimension) using the Lax-Friedrichs flux splitting. GPU texture memory is arranged for coalesced access: the 192³ grid is stored as 192 slices of 192x192, accessed via texture3D. BFECC (Back and Forth Error Compensation and Correction) is layered on top for dye transport — advect forward, advect backward, compute error, correct — adding ~30% compute overhead but dramatically reducing numerical diffusion.
+        </div>
+        <a href="#" class="blog-entry__read">Read more &#8594;</a>
+      </article>
+
+      <article class="blog-entry">
+        <div class="blog-entry__number">LOG ENTRY 005</div>
+        <div class="blog-entry__title">VirtIO-GPU Double-Buffered Compositor</div>
+        <div class="blog-entry__date">2026-07-02</div>
+        <div class="blog-entry__excerpt">Building the FeatherRTOS GUI compositor on top of VirtIO-GPU. Double buffering, dirty rect tracking, and the rendering pipeline from cell-level to GPU flip.</div>
+        <div class="blog-entry__full">
+          The FeatherRTOS window manager uses VirtIO-GPU for display output at 1920x1080. The compositor maintains two GPU resources — front buffer (scanout) and back buffer (render target). The rendering pipeline: the terminal emulator writes characters to a cell grid, the renderer converts dirty cells to pixel-level dirty rects, the 2D GPU renderer blends wallpaper layers, window content, and the cursor into the back buffer, then a SET_SCANOUT flip atomically swaps the buffers. Dirty rect tracking is critical for performance — instead of redrawing the entire 1920x1080 framebuffer (8.3 MB per frame), the compositor tracks which cells changed and only flushes those regions. For a typical terminal update (a few lines of text), the dirty rect covers <1% of the screen, reducing GPU bandwidth from 250 MB/s to ~2 MB/s per frame.
+        </div>
+        <a href="#" class="blog-entry__read">Read more &#8594;</a>
+      </article>
+
+      <article class="blog-entry">
+        <div class="blog-entry__number">LOG ENTRY 004</div>
+        <div class="blog-entry__title">Sod Shock Tube: First Validation Test</div>
+        <div class="blog-entry__date">2026-06-25</div>
+        <div class="blog-entry__excerpt">Running the Sod shock tube benchmark on FeatherCFD. Density error 8.9%, velocity error 2.3%, pressure error 12.8% — all under the 15% acceptance threshold.</div>
+        <div class="blog-entry__full">
+          The Sod shock tube is the classic 1D Riemann problem for validating compressible flow solvers. The setup: a 1D domain with a diaphragm at x=0.5 separating high-pressure (left, ρ=1.0, p=1.0) and low-pressure (right, ρ=0.125, p=0.1) regions. At t=0, the diaphragm bursts, generating a right-moving shock, a contact discontinuity, and a left-moving expansion fan. FeatherCFD's compressible Euler solver reproduces all three wave features. Quantitative comparison against the exact solution (computed via the Godunov method): L1 errors of 8.9% (density), 2.3% (velocity), and 12.8% (pressure). The pressure error is highest due to smearing at the contact discontinuity. All errors are below the 15% threshold, and the shock speed matches the Rankine-Hugoniot condition within 2%.
+        </div>
+        <a href="#" class="blog-entry__read">Read more &#8594;</a>
+      </article>
+
+      <article class="blog-entry">
+        <div class="blog-entry__number">LOG ENTRY 003</div>
+        <div class="blog-entry__title">Implementing x86 SMP Support</div>
+        <div class="blog-entry__date">2026-12-15</div>
+        <div class="blog-entry__excerpt">APIC initialization, IPI delivery, and bringing up application processors on bare metal. Cache coherency challenges and lock-free MPSC queues.</div>
+        <div class="blog-entry__full">
+          The Local APIC is memory-mapped at 0xFEE00000 and configured via the APIC-base MSR (0x1B). 
+          Each CPU core has its own LAPIC with a unique ID read from the APIC ID register (0x20). 
+          The boot processor (BSP) starts first and must send a Startup IPI (SIPI) to wake each 
+          Application Processor (AP). The SIPI vector points to a 4K trampoline page in low memory 
+          (below 1 MB) that the AP executes to enter long mode, set up its own GDT/IDT, and signal 
+          readiness via a spinlock. Once all APs are running, the BSP distributes work through a 
+          per-CPU run queue with cache-coherent MPSC channels. Lock-free atomics (xchg, cmpxchg) 
+          manage the queue heads to avoid spinlock contention under high inter-CPU traffic.
+        </div>
+        <a href="#" class="blog-entry__read">Read more &#8594;</a>
+      </article>
+
+      <article class="blog-entry">
+        <div class="blog-entry__number">LOG ENTRY 002</div>
+        <div class="blog-entry__title">PCIe Enumeration on Bare Metal</div>
+        <div class="blog-entry__date">2026-11-20</div>
+        <div class="blog-entry__excerpt">ECAM-based configuration space access, device scanning, BAR allocation, and MSI-X interrupt setup on QEMU q35.</div>
+        <div class="blog-entry__full">
+          PCI Express uses Enhanced Configuration Access Mechanism (ECAM), mapping the full 256 MB 
+          configuration space to a memory region specified by the MCFG ACPI table. On QEMU q35, 
+          this is at 0xB0000000. Each device function gets 4 KB of space: 256 bytes of standard 
+          config header plus 256 bytes of PCIe extended caps. The enumeration walks bus 0, discovers 
+          the host bridge (00:00.0), then recursively probes secondary buses behind PCI-to-PCI 
+          bridges. For each device, the driver reads vendor/device ID, assigns Base Address Registers 
+          (BARs) by writing all-ones and reading back the size, then allocates MMIO or IO space 
+          from the available pool. MSI-X capability is parsed from the capabilities list; the driver 
+          programs the table BAR and PBA BAR, then configures each interrupt vector with a unique 
+          message address/data pair.
+        </div>
+        <a href="#" class="blog-entry__read">Read more &#8594;</a>
+      </article>
+
+      <article class="blog-entry">
+        <div class="blog-entry__number">LOG ENTRY 001</div>
+        <div class="blog-entry__title">Setting Up the x86_64 Cross-Compiler</div>
+        <div class="blog-entry__date">2026-10-01</div>
+        <div class="blog-entry__excerpt">Building a Rust no_std target, crafting the UEFI PE32+ wrapper, and the first "Hello" from ring zero via serial.</div>
+        <div class="blog-entry__full">
+          The toolchain starts with Rust nightly and a custom target.json: no_std, no alloc, 
+          relocation-model=static, code-model=kernel. The build pipeline compiles to ELF, objcopys 
+          to binary, wraps as a COFF object, then links into a PE32+ executable via a NASM stub. 
+          The UEFI stub (uefi_stub.asm) parses the embedded kernel binary, sets up long-mode page 
+          tables identity-mapping 0-16 MB, loads a 64-bit GDT, and calls rust_main(). The first 
+          sign of life is a '!' character written to COM1 at 115200 baud via the UART 16550 driver. 
+          On the QEMU monitor, 'serial0' shows the character immediately. From there, the GDT, IDT, 
+          and ACPI tables are parsed — and the kernel has a foundation to build on.
+        </div>
+        <a href="#" class="blog-entry__read">Read more &#8594;</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- YouTube -->
+<section id="yt" class="section">
+  <div class="section__inner">
+    <h2 class="section__title">&gt; YouTube Channel</h2>
+    <div id="ytContainer">
+      <div id="ytVideoWrap">
+        <iframe id="ytPlayer" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div id="ytLoading" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:0.75rem;color:rgba(232,232,240,0.3);letter-spacing:0.1em;text-transform:uppercase;background:#050508;">Loading latest video...</div>
+      </div>
+      <div id="ytInfo">
+        <a href="https://www.youtube.com/@aadityaaerospace1" target="_blank" class="yt-link">Visit Channel &#8599;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="section">
+  <div class="section__inner">
+    <h2 class="section__title">Profile</h2>
+
+    <div class="about__section">
+      <div class="about__label">Name</div>
+      <div class="about__value">Aaditya Nair</div>
+    </div>
+
+    <div class="about__section">
+      <div class="about__label">Mission</div>
+      <div class="about__value" style="color:var(--accent);font-family:var(--font-mono);font-size:1rem;">
+        Building aerospace software, simulation systems, and experimental engineering tools.
+      </div>
+    </div>
+
+    <div class="about__section">
+      <div class="about__label">Age</div>
+      <div class="about__value" id="profileAge"></div>
+    </div>
+
+    <div class="about__section">
+      <div class="about__label">Current Status</div>
+      <div class="about__value">B.Tech Aerospace Engineering Student — Lovely Professional University</div>
+    </div>
+
+    <div class="about__section">
+      <div class="about__label">Focus Areas</div>
+      <div class="about__value">
+        <ul>
+          <li>Flight Software (FeatherRTOS, ARINC 653, FDIR)</li>
+          <li>CFD (GPU Compute, WENO-5, Multigrid)</li>
+          <li>Orbital Mechanics (CubeSat, Hohmann, LEO/GTO)</li>
+          <li>Systems Programming (Rust, OS Dev, Linux Tuning)</li>
+          <li>Power Optimization (CPU freq, scheduler, battery)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="about__section">
+      <div class="about__label">Current Work</div>
+      <div class="about__value">
+        <ul>
+          <li>FeatherRTOS Graphics Stack — GPU-accelerated window compositor</li>
+          <li>FeatherCFD Validation Suite — Expanding to turbulent flow benchmarks</li>
+          <li>Orbital Mission Planner — Lambert solver &amp; porkchop plot generator</li>
+          <li>Rocketisium 4.0 — Next volume in the series</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="about__section">
+      <div class="about__label">Publications</div>
+      <div class="about__value">
+        <ul>
+          <li>
+            <strong>Rocketisium: The History of Rockets</strong> (2021) &mdash; ISBN 9781685862831<br>
+            <span style="font-size:0.8125rem;color:var(--text-dim);">Early rocket development, the Space Race, major launch vehicles, and the Saturn V era. A beginner-friendly entry point for space enthusiasts tracing rocketry from its origins through Apollo.</span>
+          </li>
+          <li style="margin-top:12px;">
+            <strong>Rocketisium 2.0: How Does Rocket Engine Work?</strong> (Dec 2021, 90pp) &mdash; ISBN 9798885469616<br>
+            <span style="font-size:0.8125rem;color:var(--text-dim);">Rocket propulsion fundamentals: how engines work, thrust generation, and the F-1 engine. The transition from history into engineering — covering the basic physics behind every launch vehicle.</span>
+          </li>
+          <li style="margin-top:12px;">
+            <strong>Rocketisium 3.0: The World of Hypergolic Propellants</strong> (Jun 2023, 70pp) &mdash; ISBN 9798890663603<br>
+            <span style="font-size:0.8125rem;color:var(--text-dim);">Hypergolic propellant chemistry, ignition mechanisms, and spacecraft propulsion systems. Written during Class 10 — an early technical deep-dive into satellite and mission-critical propulsion.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="about__section">
+      <div class="about__label">Repositories</div>
+      <div class="about__value">
+        <ul>
+          <li><a href="https://github.com/Aaditya-Nair-Aero/FeatherRTOS" target="_blank">github.com/Aaditya-Nair-Aero/FeatherRTOS</a></li>
+          <li><a href="https://github.com/Aaditya-Nair-Aero/FeatherCFD" target="_blank">github.com/Aaditya-Nair-Aero/FeatherCFD</a></li>
+          <li><a href="https://github.com/Aaditya-Nair-Aero/FeatherArch" target="_blank">github.com/Aaditya-Nair-Aero/FeatherArch</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="about__section">
+      <div class="about__label">Contact</div>
+      <div class="about__value">
+        <ul>
+          <li>GitHub: /Aaditya-Nair-Aero</li>
+          <li>GPG: [key fingerprint]</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="about__tagline">
+      "This site looks like engineering documentation. That's intentional."
+    </div>
+  </div>
+</section>
+
+<!-- 404 -->
+<section id="notfound" class="section">
+  <div class="notfound-bg">
+    <div class="notfound-grid"></div>
+    <div class="notfound-star" style="top:10%;left:15%;animation-delay:0s;"></div>
+    <div class="notfound-star" style="top:25%;right:20%;animation-delay:1s;"></div>
+    <div class="notfound-star" style="top:50%;left:10%;animation-delay:0.5s;"></div>
+    <div class="notfound-star" style="top:65%;right:15%;animation-delay:1.5s;"></div>
+    <div class="notfound-star" style="top:80%;left:25%;animation-delay:2s;"></div>
+    <div class="notfound-star" style="bottom:15%;right:25%;animation-delay:0.8s;"></div>
+  </div>
+  <div class="notfound-rocket">
+    <div class="rocket-body">
+      <div class="rocket-nose"></div>
+      <div class="rocket-fuselage"></div>
+      <div class="rocket-window"></div>
+      <div class="rocket-fin-left"></div>
+      <div class="rocket-fin-right"></div>
+      <div class="rocket-exhaust"></div>
+    </div>
+    <div class="rocket-flame">
+      <div class="flame-core"></div>
+      <div class="flame-outer"></div>
+    </div>
+  </div>
+  <div class="notfound-content">
+    <div class="notfound-code">404</div>
+    <div class="notfound-label">NOT FOUND</div>
+    <div class="notfound-desc">The requested trajectory could not be plotted.</div>
+    <a href="#hero" class="notfound-btn">&#8592; RETURN TO BASE</a>
+  </div>
+</section>
+
+<!-- Terminal -->
+<button class="terminal-toggle" id="terminalToggle" aria-label="Toggle terminal"> &gt;_ </button>
+<div class="terminal-panel" id="terminalPanel">
+  <div class="terminal-header">aaditya@aerospace ~</div>
+  <div class="terminal-body" id="terminalBody">
+    <div><span class="prompt">></span> FeatherRTOS terminal ready. Type <span style="color:var(--accent);">help</span> for commands.</div>
+  </div>
+  <div class="terminal-input-line">
+    <span class="prompt">></span>
+    <input type="text" class="terminal-input" id="terminalInput" placeholder="type a command..." autofocus>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  AADITYA AEROSPACE &middot; jo3.org &middot; 2026
+</footer>
+
+<script src="js/orbital-canvas.js?v=3"></script>
+<script src="js/main.js?v=11"></script>
+<script src="js/kernel-explorer.js?v=2"></script>
+
+<script src="js/mission-control.js?v=2"></script>
+<script src="js/timeline.js?v=2"></script>
+<script src="js/project-bg.js?v=4"></script>
+<script src="js/terminal.js?v=2"></script>
+<!-- service worker disabled during development -->
+</body>
+</html>
